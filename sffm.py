@@ -97,8 +97,8 @@ for ii in np.arange(z_min, z_max, z_min):
                                      (-(h / 2.0) * np.power(w_r, 2) + k_zero * beta_two * np.power(w_t, 2) * (h / 2.0)))
 
         f = np.fft.ifft(spectrum)
-        current = np.array(np.absolute((np.absolute(f) * (Po * c * n_zero / 8 * pi)) / uaux[99]))
-        density_deriv = np.array(2 * pi * omega_zero / factorial(Kappa) * (current / I_mp)**Kappa * n_atm)
+        intensity = np.array(np.absolute((np.absolute(f) * (Po * c * n_zero / 8 * pi)) / uaux[99]))
+        density_deriv = np.array(2 * pi * omega_zero / factorial(Kappa) * (intensity / I_mp)**Kappa * n_atm)
         omega_plasma_square = np.array((((4 * pi * q**2 * np.trapz(density_deriv)) / m) / c ** 2))
         f = f * (1 + ((1 / (2.0 * 1j * k_zero) *
                         (- gamma * np.power(np.absolute(f), 2) * h + h * omega_plasma_square / c ** 2 -
