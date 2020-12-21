@@ -14,9 +14,9 @@ Source components used in propagation equations are
 * Scipy
 
 ## Simulations:
-![plot](pulse_evolution.png "Optional Title")
-![plot](pulse_evolution_contour.png "Optional Title")
-![plot](number_density.png "Optional Title")
+![plot](figures/pulse_evolution.png "Optional Title")
+![plot](figures/pulse_evolution_contour.png "Optional Title")
+![plot](figures/number_density.png "Optional Title")
 
 ## References:
 * Sprangle *et al* Propagation of intense short laser pulses in the atmosphere
